@@ -73,9 +73,10 @@ int main(int argc, char **argv)
             case Crazyradio::Datarate_1MPS:
               std::cout << "1M";
               break;
-            case Crazyradio::Datarate_2MPS:
+              // Quick fix by Patrick, Crazyradio::Datarate_2MPS == Crazyradio::Datarate_250KPS wegen Interferenzen
+            /*case Crazyradio::Datarate_2MPS:
               std::cout << "2M";
-              break;
+              break;*/
             }
 
             if (defaultAddressStr != addressStr) {
